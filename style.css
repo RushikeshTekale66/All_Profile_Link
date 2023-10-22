@@ -1,0 +1,81 @@
+*{
+    background-color: aqua;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+name{
+    font-weight: 900;
+    text-shadow: 1px 2px 15px black;
+}
+ul{
+   list-style-type: none;
+   font-size: large;
+    
+}
+
+ul li{
+    border: 1px solid black;
+    border-radius: 40%;
+    margin: 25px;
+    background-color: aquamarine;
+    padding: 10px 10px;
+}
+
+a{
+    text-decoration: none;
+    background-color: aquamarine;
+    color: black;
+    font-weight:bold;
+}
+
+
+li:hover, a:hover{
+    color: red;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  .bounce {
+    animation: bounce 2s;
+  }
+  
+  @keyframes stepAnimation {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    25% {
+      transform: translateY(0);
+      opacity: 0.25;
+    }
+    50% {
+      transform: translateY(0);
+      opacity: 0.5;
+    }
+    75% {
+      transform: translateY(0);
+      opacity: 0.75;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .step-animation {
+    animation: stepAnimation 2s steps(4) both;
+  }
